@@ -6,6 +6,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Screenshot](#screenshot)
 - [Built with](#built-with)
+- [Links](#links)
 - [Author](#author)
 
 ## Screenshot
@@ -15,6 +16,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Built with
 
 - [React](https://reactjs.org/)
+
+## Links
+
+- Solution URL: (https://github.com/PixieMgt/frontend-challenges/tree/main/qr-code-component-main)
+- Live Site URL: (https://frontend-challenges-beta.vercel.app/)
 
 ## Author
 

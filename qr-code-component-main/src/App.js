@@ -9,10 +9,6 @@ function App() {
         <p className='title'>Improve your front-end skills by building projects</p>
         <p className='instructions'>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       </div >
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Pixie Moortgat</a>.
-      </div>
     </>
   );
 }
