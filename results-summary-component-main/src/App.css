@@ -148,6 +148,10 @@ html {
     text-align: center;
 }
 
+.btnContinue:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 650px) {
     .container {
         grid-template-columns: 1fr;
