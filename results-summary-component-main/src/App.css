@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.resultContainer {
+    background: linear-gradient(0deg, rgba(46, 43, 233, 1) 0%, rgba(120, 87, 255, 1) 100%);
+    border-radius: 2em;
+    padding: 1em 4em;
+    min-width: 12em;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.resultTitle {
+    color: lightgrey;
+    font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scoreContainer {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    height: 10em;
+    width: 10em;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultScore {
+    margin: 0;
+    font-size: 4em;
+}
+
+.resultTotalScore {
+    margin: 0;
+    color: lightgrey;
+}
+
+.congratulateTitle {
+    font-size: xx-large;
+    margin: 1em 0 0 0;
+}
+
+.congratulateDescription {
+    color: lightgrey;
+}
+
+.summaryContainer {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    padding: 1em 2em;
+    max-height: 25em;
+    text-align: left;
+    min-width: 15em;
+}
+
+.summaryTitle {
+    font-size: x-large;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    padding: 0 0.5em;
+    border-radius: 1em;
+    height: 3em;
+    margin: 0 0 1em 0;
+}
+
+.icon {
+    margin: auto;
+}
+
+.rowTitle {
+    font-weight: bold;
+}
+
+.rowScore {
+    grid-column: 3;
+    font-weight: bold;
+    text-align: right;
+    margin: auto 0.5em
+}
+
+.rowTotalScore {
+    color: lightgrey;
+}
+
+.ReactionRow {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.MemoryRow {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.VerbalRow {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.VisualRow {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.ReactionRow>.rowTitle {
+    color: hsl(0, 100%, 67%);
+}
+
+.MemoryRow>.rowTitle {
+    color: hsl(39, 100%, 56%);
+}
+
+.VerbalRow>.rowTitle {
+    color: hsl(166, 100%, 37%);
+}
+
+.VisualRow>.rowTitle {
+    color: hsl(234, 85%, 45%);
+}
+
+.btnContinue {
+    all: unset;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 2em;
+    height: 2.5em;
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
