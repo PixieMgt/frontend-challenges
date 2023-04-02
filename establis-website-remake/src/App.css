@@ -8,8 +8,31 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: hsl(201, 47%, 16%);
-    color: white;
+    background: white;
+    color: black;
+}
+
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.page-not-found__home {
+    all: unset;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.page-not-found__home:hover {
+    cursor: pointer;
+    color: hsl(350, 89%, 44%);
+    letter-spacing: 0.2em;
 }
 
 .hidden {
@@ -162,6 +185,7 @@ body {
 .hamburger-menu__clicked-item:hover {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
+    letter-spacing: 0.2em;
 }
 
 .hamburger-menu__clicked-language-container {
@@ -196,6 +220,8 @@ body {
     margin: 100px 0 0 0;
     gap: 30px;
     padding: 0 10vw 50px 10vw;
+    background: hsl(201, 47%, 16%);
+    color: white;
 }
 
 .footer-subscribe {
@@ -217,7 +243,6 @@ body {
     all: unset;
     width: 800px;
     height: 50px;
-    background: hsl(201, 47%, 16%);
     border-bottom: 1px solid white;
     color: white;
     font-size: 1.5em;
@@ -233,7 +258,6 @@ body {
     all: unset;
     width: 50px;
     height: 50px;
-    background: hsl(201, 47%, 16%);
     color: white;
     font-size: 1em;
     letter-spacing: 0.1em;
@@ -246,6 +270,7 @@ body {
 .footer-subscribe__submit:hover {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
+    letter-spacing: 0.2em;
 }
 
 .footer-content {
@@ -273,7 +298,7 @@ body {
 }
 
 .footer-content-column__establis__paragraph {
-    font-size: 0.8em;
+    font-size: 1em;
     color: white;
     margin: 0 0 30px 0;
     line-height: 25px;
@@ -321,6 +346,7 @@ body {
 .footer-content-column__sitemap__button:hover {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
+    letter-spacing: 0.2em;
 }
 
 .footer-content-column__contact__title {
@@ -407,7 +433,7 @@ body {
     height: 2px;
     width: 80px;
     min-width: 80px;
-    max-width: 30vw;
+    max-width: 500px;
     border-radius: 2px;
     background: hsl(350, 89%, 44%);
 }
@@ -425,6 +451,7 @@ body {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
     transition: 0.3s;
+    letter-spacing: 0.2em;
 }
 
 .showcase-image {
@@ -470,7 +497,7 @@ body {
     height: 2px;
     width: 80px;
     min-width: 80px;
-    max-width: 15vw;
+    max-width: 300px;
     border-radius: 2px;
     background: hsl(350, 89%, 44%);
 }
@@ -489,6 +516,7 @@ body {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
     transition: 0.3s;
+    letter-spacing: 0.2em;
 }
 
 .home-projects {
@@ -511,7 +539,7 @@ body {
     height: 2px;
     width: 80px;
     min-width: 80px;
-    max-width: 15vw;
+    max-width: 300px;
     border-radius: 2px;
     background: hsl(350, 89%, 44%);
     margin: auto auto 30px 20px;
@@ -534,6 +562,7 @@ body {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
     transition: 0.3s;
+    letter-spacing: 0.2em;
 }
 
 .home-projects__image {
@@ -551,7 +580,6 @@ body {
 }
 
 .home-projects__scrim--first {
-    border: 2px solid white;
     background: hsla(201, 47%, 16%);
     height: 25vh;
     width: 100%;
@@ -567,9 +595,8 @@ body {
 }
 
 .home-projects__scrim--second {
-    border: 2px solid white;
     background: hsla(201, 47%, 16%);
-    height: 20vh;
+    height: 25vh;
     width: 100%;
     grid-row: 2/3;
     grid-column: 1/2;
@@ -583,7 +610,6 @@ body {
 }
 
 .home-projects__scrim--third {
-    border: 2px solid white;
     background: hsla(201, 47%, 16%);
     height: 30vh;
     width: 100%;
@@ -599,7 +625,6 @@ body {
 }
 
 .home-projects__scrim--fourth {
-    border: 2px solid white;
     background: hsla(201, 47%, 16%);
     height: 32vh;
     width: 100%;
@@ -617,7 +642,7 @@ body {
 .home-projects__image--first {
     background: url('./images/canal-wharf-2.jpg');
     height: 25vh;
-    width: 70%;
+    width: 80%;
     min-width: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -628,8 +653,8 @@ body {
 
 .home-projects__image--second {
     background: url('./images/quatuor-building-2.jpg');
-    height: 20vh;
-    width: 65%;
+    height: 25vh;
+    width: 80%;
     min-width: 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -641,7 +666,7 @@ body {
 .home-projects__image--third {
     background: url('./images/ekla-2.jpg');
     height: 30vh;
-    width: 80%;
+    width: 90%;
     min-width: 350px;
     background-repeat: no-repeat;
     background-position: center;
@@ -653,7 +678,7 @@ body {
 .home-projects__image--fourth {
     background: url('./images/wijngaard.jpg');
     height: 32vh;
-    width: 75%;
+    width: 90%;
     min-width: 400px;
     background-repeat: no-repeat;
     background-position: center;
@@ -672,6 +697,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 10vh;
+    color: white;
 }
 
 .home-team__number {
@@ -681,11 +708,13 @@ body {
     grid-column: 1/2;
 }
 
-.home-team__title {
-    font-size: 2.5em;
-    margin: 160px auto auto 20px;
+.home-team__content-container {
     grid-row: 1/2;
     grid-column: 2/3;
+}
+
+.home-team__title {
+    font-size: 2.5em;
     max-width: 300px;
 }
 
@@ -694,12 +723,11 @@ body {
     height: 2px;
     width: 80px;
     min-width: 80px;
-    max-width: 15vw;
+    max-width: 300px;
     border-radius: 2px;
     background: hsl(350, 89%, 44%);
-    margin: auto auto auto 20px;
-    grid-row: 1/2;
-    grid-column: 2/3;
+    display: block;
+    margin: 20px 0;
 }
 
 .home-team__read-more {
@@ -708,15 +736,13 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
-    margin: auto auto 240px 20px;
-    grid-row: 1/2;
-    grid-column: 2/3;
 }
 
 .home-team__read-more:hover {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
     transition: 0.3s;
+    letter-spacing: 0.2em;
 }
 
 .whats-new {
@@ -731,7 +757,7 @@ body {
     font-size: 2.5em;
     grid-row: 1/2;
     grid-column: 1/2;
-    margin: 0 auto 0 100px;
+    margin: 0 auto 0 50px;
 }
 
 .whats-new__line {
@@ -739,10 +765,10 @@ body {
     height: 2px;
     width: 80px;
     min-width: 80px;
-    max-width: 13vw;
+    max-width: 250px;
     border-radius: 2px;
     background: hsl(350, 89%, 44%);
-    margin: 70px auto 0 100px;
+    margin: 70px auto 0 50px;
     grid-row: 1/2;
     grid-column: 1/2;
 }
@@ -756,8 +782,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0 auto 0 50px;
     grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.whats-new__content-container {
+    grid-row: 2/3;
     grid-column: 2/3;
 }
 
@@ -766,24 +796,16 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: hsl(350, 89%, 44%);
-    margin: 25px 0 auto 50px;
-    grid-row: 2/3;
-    grid-column: 2/3;
 }
 
 .whats-new__content-title {
     font-size: 1.5em;
-    margin: 50px auto auto 50px;
-    grid-row: 2/3;
-    grid-column: 2/3;
 }
 
 .whats-new__content {
-    font-size: 0.8em;
+    font-size: 1em;
     color: grey;
-    margin: 120px auto auto 50px;
-    grid-row: 2/3;
-    grid-column: 2/3;
+    line-height: 1.5em;
 }
 
 .whats-new__read-more {
@@ -792,20 +814,18 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
-    margin: 200px auto auto 50px;
-    grid-row: 2/3;
-    grid-column: 2/3;
 }
 
 .whats-new__read-more:hover {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
     transition: 0.3s;
+    letter-spacing: 0.2em;
 }
 
 .join-us {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
     width: 100vw;
     background-repeat: no-repeat;
@@ -816,8 +836,7 @@ body {
 
 .join-us__image {
     background-image: url('../public/images/join-us-image.jpg');
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     min-width: 300px;
     background-repeat: no-repeat;
@@ -828,11 +847,17 @@ body {
     grid-column: 1/2;
 }
 
+.join-us__content-container {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin: auto 0 auto 50px;
+}
+
 .join-us__title {
     font-size: 2.5em;
     grid-row: 1/2;
     grid-column: 2/3;
-    margin: 0 auto 0 100px;
+    max-width: 300px;
 }
 
 .join-us__line {
@@ -840,20 +865,15 @@ body {
     height: 2px;
     width: 80px;
     min-width: 80px;
-    max-width: 24vw;
+    max-width: 300px;
     border-radius: 2px;
     background: hsl(350, 89%, 44%);
-    margin: 70px auto 0 100px;
-    grid-row: 1/2;
-    grid-column: 2/3;
 }
 
 .join-us__content {
-    font-size: 0.8em;
+    font-size: 1em;
     color: grey;
-    margin: 100px auto auto 100px;
-    grid-row: 1/2;
-    grid-column: 2/3;
+    line-height: 1.5em;
 }
 
 .join-us__read-more {
@@ -862,13 +882,11 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
-    margin: 170px auto auto 100px;
-    grid-row: 1/2;
-    grid-column: 2/3;
 }
 
 .join-us__read-more:hover {
     cursor: pointer;
     color: hsl(350, 89%, 44%);
     transition: 0.3s;
+    letter-spacing: 0.2em;
 }

@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import HomeAbout from "./components/home/HomeAbout";
 import Showcase from "./components/home/Showcase";
 import HomeProjects from "./components/home/HomeProjects";

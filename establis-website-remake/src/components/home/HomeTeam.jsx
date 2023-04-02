@@ -9,9 +9,11 @@ const HomeTeam = () => {
     return (
         <div className="home-team">
             <h1 className="home-team__number">28</h1>
-            <h1 className="home-team__title">redenen om op ons te bouwen</h1>
-            <div className="home-team__line"></div>
-            <button className="home-team__read-more">ontdek ons team</button>
+            <div className="home-team__content-container">
+                <h1 className="home-team__title">redenen om op ons te bouwen</h1>
+                <div className="home-team__line"></div>
+                <button className="home-team__read-more">ontdek ons team</button>
+            </div>
         </div>
     );
 }
