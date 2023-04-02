@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import HamburgerMenu from './components/HamburgerMenu'
-import Logo from './components/Logo'
+import HamburgerMenu from './components/shared/HamburgerMenu'
+import Logo from './components/shared/Logo'
 import Home from './Home'
+import Footer from './components/shared/Footer'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <div className="content">
         <Home />
       </div>
+      <Footer />
     </div>
   )
 }

@@ -1,12 +1,19 @@
-import HomeAbout from "./components/HomeAbout";
-import Showcase from "./components/Showcase";
+import HomeAbout from "./components/home/HomeAbout";
+import Showcase from "./components/home/Showcase";
+import HomeProjects from "./components/home/HomeProjects";
+import HomeTeam from "./components/home/HomeTeam";
+import WhatsNew from "./components/home/WhatsNew";
+import JoinUs from "./components/home/JoinUs";
 
 const Home = () => {
     return (
         <div className="home">
             <Showcase />
             <HomeAbout />
-            <div className="dev-page-height"></div>
+            <HomeProjects />
+            <HomeTeam />
+            <WhatsNew />
+            <JoinUs />
         </div>
     );
 }
